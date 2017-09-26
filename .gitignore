@@ -1,0 +1,10 @@
+*.egg-info
+*.pot
+*.py[co]
+*.sublime-*
+.coverage
+.idea
+.python-version
+__pycache__
+htmlcov
+.envrc

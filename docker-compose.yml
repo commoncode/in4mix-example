@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+    db:
+        image: ibmcom/informix-developer-database
+        tty: true # Needed to ensure container doesn't self terminate
+        environment:
+            LICENSE: accept
+            DB_NAME: spare_parts
+            DB_USER: spare
+            DB_PASS: parts
+        privileged: true
+        ports:
+            - "9088:9088"
